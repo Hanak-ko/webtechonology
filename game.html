@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Коти vs Миші! 🐱🖱️</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="game.css">
+  <style>
+    /* Додаткові стилі для конфетті (зірочки) */
+    canvas { display: block; margin: 20px auto; }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <header>
+      <h1>🐱 Коти vs Миші 🖱️</h1>
+      <nav>
+        <a href="index.html">Головна</a> | 
+        <a href="animation.html">Парад котів</a> | 
+        <a href="game.html">Гра</a> | 
+        <a href="contacts.html">Контакти</a>
+      </nav>
+      <hr>
+    </header>
+  </div>
+
+  <div id="container">
+    <div id="content">
+      <main>
+        <!-- Старт меню -->
+        <div id="startMenu">
+          <h2 style="text-align: center; color: #ff69b4;">🐾 Ласкаво просимо до гри! 🐾</h2>
+          <div style="text-align: center; margin: 30px; font-size: 22px;">
+            <p><b>🎮 Як грати:</b></p>
+            <p>🐱 <b>Ти - кіт!</b> Лови мишей 🖱️ (+10 очок) та рибок 🐟 (+100 очок + швидкість)!</p>
+            <p>🌵 <b>Небезпека:</b> Ухиляйся від кактусів, що повзуть до тебе (-1 ❤️)!</p>
+            <ul style="text-align: left; display: inline-block;">
+              <li>🏃‍♂️ <b>Керування:</b> WASD або стрілки ↑↓←→</li>
+              <li>📱 <b>На телефоні:</b> торкайся екрану</li>
+              <li>❤️ <b>Життя:</b> 3 (0 = поразка)</li>
+              <li>⏱️ <b>Мета:</b> Вижи 60 сек – ПЕРЕМОГА! 🏆</li>
+            </ul>
+            <br><br>
+            <button id="startBtn" style="font-size: 24px; padding: 20px 40px;">🚀 ПОЧАТИ ГРУ! 🚀</button>
+          </div>
+        </div>
+
+        <!-- Ігровий UI -->
+        <div id="gameUI" style="display: none;">
+          <div id="ui">
+            Очки: <span id="score">0</span> | 
+            Життя: <span id="lives">❤️❤️❤️</span> | 
+            Час: <span id="timer">60</span>с
+          </div>
+          
+          <div id="gameContainer" style="position: relative;">
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+            
+            <!-- Екран кінця гри -->
+            <div id="gameOver" style="display: none;">
+              <h1 style="color: #ff1493; text-shadow: 0 0 20px #1e90ff; font-size: 48px; text-align: center;">
+                GAME OVER 😿
+              </h1>
+              <h2 style="color: #1e90ff; font-size: 36px; text-align: center;">
+                Твій рекорд: <span id="finalScore">0</span> балів! 🏆
+              </h2>
+              <br>
+              <button id="restartBtn" style="font-size: 24px; padding: 15px 30px;">🔄 Грати ще раз!</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div id="footer">
+    <footer><hr><p>&copy; 2025 Гра "Коти vs Миші" by Grok! 🐱</p></footer>
+  </div>
+
+  <!-- Підключення JS -->
+  <script src="game.js"></script>
+</body>
+</html>

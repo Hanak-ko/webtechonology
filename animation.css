@@ -1,0 +1,23 @@
+.parade-container {
+  position: relative;
+  width: 90vw; max-width: 800px;
+  height: 60vh; max-height: 500px;
+  margin: 20px auto;
+  background: linear-gradient(to bottom, #fbedff, #ffffff);
+  border: 5px solid #ff69b4;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(255,105,180,0.4);
+}
+@keyframes fadeOut {
+  to { opacity: 0; transform: translateY(30px) scale(0.5); }  /* Плавне зникання */
+}
+button { 
+  background: linear-gradient(45deg, #1e90ff, #ff69b4);
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(255,105,180,0.4);
+  transition: all 0.3s;
+}
+button:hover { transform: translateY(-5px) scale(1.1); }
