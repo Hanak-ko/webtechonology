@@ -94,13 +94,15 @@ h2 {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
   margin-left: 20px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 ul li {
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .video-container {
@@ -124,6 +126,7 @@ ul li {
 footer p {
   color: #333;
 }
+
 
 #smt li a:hover {
   color: #ff69b4;
