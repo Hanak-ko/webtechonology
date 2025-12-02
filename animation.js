@@ -1,6 +1,3 @@
-// ============================================
-// 🐱 ANIMATION.JS - РАНДОМНИЙ РУХ + КРАСИВІ ЛАПКИ!
-// ============================================
 
 const container = document.getElementById('paradeContainer');
 const canvas = document.getElementById('confettiCanvas');
